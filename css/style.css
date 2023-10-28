@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  overflow: hidden;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.logo img{
+  width: 200px;
+  margin-right:20px;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row .left {
+  margin-left: 20px;
+}
+
+.row .right {
+  margin-left: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 320px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.6;
+  margin: 10px 0;
+  height: 55px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 5px;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+.input-field input {
+  background: transparent;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 17px;
+  color: #333;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+
+
+.btn {
+  width: 150px;
+  background-color: #444;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #0e0d12;
+  border: solid 1px #fff;
+}
+
+.btn2 {
+  width: 150px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 49px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn2:hover {
+  background-color: #0e0d12;
+  border: solid 1px #fff;
+  color: #fff;
+}
+
+.alert {
+  width: 350px;
+  height: auto;
+  justify-content: left;
+  align-items: center;
+  color: red;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 40px;
+  font-size: 15px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 15px;
+}
+
+.error.alert {
+  border-left: 6px solid #ff0000;
+  background: white;
+  text-align: left;
+}
+
+.error p {
+  margin: 5px 2px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+/* surf card */
+.surfCardWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.surfCard {
+  max-width: 350px;
+  min-height: 300px;
+  /* background: #fff;        */
+  /* padding: 20px; */
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  margin: 40px;
+  box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+  text-align: center;
+}
+
+.surfCard img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.surfCardContent {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+
+/* joinus page */
+.joinContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.joinleft {
+  flex: 1;
+  background-image: url(./../image/32.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 3px solid #fff;
+}
+
+.joinright {
+  flex: 1;
+  background-image: url(./../image/31.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jointitle {
+  text-align: center;
+}
+
+.jointitle p {
+  font-size: 35px;
+  font-weight: 700;
+  color: azure;
+  margin-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.joinbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.join{
+  margin-top: 100px;
+  margin-left:40px;
+  padding: 2px 2px;
+  text-decoration: none;
+  width: 150px;
+  background-color: #444;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}

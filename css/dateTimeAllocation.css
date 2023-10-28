@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    margin: 80px auto;
+}
+
+.cinema-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px auto;
+
+}
+.btn-area button{
+    padding: 4px 10px;
+    color: red;
+}
+
+.time-allocation{
+    display: flex;
+    flex-direction: row;
+}
+
+.inactive{
+    background-color: red;
+    font-size: 20px;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+     pointer-events: none;
+}
+
+.active-mode{
+    background-color: green;
+    font-size: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}

@@ -1,0 +1,76 @@
+.add-movie-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../image/addFilm.jpg");
+
+    object-fit: contain;
+    object-position: center;
+    background-blend-mode:darken;
+    background-repeat: round;
+}
+
+.add-movie-form{
+    margin:auto;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.47);
+}
+.sign-in-form{
+
+}
+
+.input-field .dates{
+    width: 150px;
+}
+.schedule-details{
+    /*display: flex;*/
+    width: 320px;
+    margin: 10px auto;
+    /*width: 20%;*/
+    /*justify-items: flex-start;*/
+    /*top: 25px;*/
+    /*position: relative;*/
+}
+.input-field{
+    width: 450px;
+}
+.select-movie{
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    margin: auto 5px;
+    background: transparent;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 17px;
+    color: #333;
+    /*width: 45px;*/
+}
+
+.day-select{
+    display: flex;
+    flex-direction: row;
+}
+
+.time-slots{
+    display: flex;
+    justify-items: center;
+    margin: auto;
+}
+
+.time-slots h5{
+    margin-right: 5px;
+}
+
+.slot{
+    display: flex;
+    justify-items: baseline;
+    margin: auto 10px;
+}
+.slot input{
+    margin: auto;
+}
+.slot label{
+    text-align: center;
+    font-size: 0.8rem;
+}
